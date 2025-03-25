@@ -1,50 +1,90 @@
-# Welcome to your Expo app 👋
+# SwiftLoad - Mobile Airtime & Data Bundle App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+SwiftLoad is a mobile application for purchasing airtime and data bundles for various MTN Uganda using the Africa's Talking API.
 
-## Get started
+## Features
 
-1. Install dependencies
+- Purchase airtime
+- Buy data bundles with different sizes and validity periods
+- User-friendly interface with dark/light mode support
+- Secure transactions through Africa's Talking API
 
+## Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/)
+- npm or yarn
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- Africa's Talking account with API credentials
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/egesamichael/AT-Airtime-and-Data-app.git
+   
+   ```
+2. Install dependencies:
    ```bash
    npm install
    ```
-
-2. Start the app
-
+3. Create a `.env` file in the root directory and add your Africa's Talking credentials:
+   ```plaintext
+   AFRICAS_TALKING_API_KEY=your_api_key
+   AFRICAS_TALKING_USERNAME=your_username
+   ```
+4. Start the development server:
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## Usage
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Buying Airtime
+1. Navigate to the **Buy Airtime** screen.
+2. Enter the recipient's phone number.
+3. Enter the amount of airtime to purchase.
+4. Tap **Buy Airtime** to complete the transaction.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Purchasing Data Bundles
+1. Navigate to the **Buy Data** screen.
+2. Enter the recipient's phone number.
+3. Select a data bundle from the available options.
+4. Tap **Buy Data Bundle** to complete the transaction.
 
-## Get a fresh project
+## Testing
 
-When you're ready, run:
+For testing purposes, generate a sandbox api key from https://africatalking.com and use username sandbox
 
-```bash
-npm run reset-project
+## Technologies Used
+
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Africa's Talking API](https://africastalking.com/)
+
+## Project Structure
+
+```
+/app        - Main application screens using file-based routing
+/components - Reusable UI components
+/services   - API services and business logic
+/hooks      - Custom React hooks
+/assets     - Images, fonts, and other static assets
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Developer
 
-## Learn more
+- **X (Twitter):** [@egesamichael](https://x.com/egesamichael)
+- **Website:** [egesamichael.dev](https://egesamichael.dev)
 
-To learn more about developing your project with Expo, look at the following resources:
+## License
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+This project is licensed under the [MIT License](LICENSE).
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Feel free to contribute, open issues, or suggest features to improve the project!
