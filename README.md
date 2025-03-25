@@ -1,6 +1,6 @@
 # SwiftLoad - Mobile Airtime & Data Bundle App
 
-SwiftLoad is a mobile application for purchasing airtime and data bundles for various MTN Uganda using the Africa's Talking API.
+SwiftLoad is a mobile application for purchasing airtime and data bundles for MTN Uganda using the Africa's Talking API.
 
 ## Features
 
