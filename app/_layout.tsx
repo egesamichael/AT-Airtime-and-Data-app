@@ -31,7 +31,9 @@ export default function RootLayout() {
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
+        <Stack.Screen name="buy-airtime" options={{ title: 'Buy Airtime' }} />
+        <Stack.Screen name="buy-data" options={{ title: 'Buy Data' }} />
+        <Stack.Screen name="transactions" options={{ title: 'Transactions' }} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>
